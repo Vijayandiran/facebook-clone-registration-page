@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Registration Page</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" action="/register" method="POST">
+            <h2>Create an account</h2>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <div class="dob-container">
+                    <!-- Day -->
+                    <select id="dobDay" name="dobDay" required>
+                        <!-- Options for day -->
+                        <!-- You can generate these options dynamically using JavaScript -->
+                        <option value="1">1</option>
+                        <!-- ... (up to 31) ... -->
+                    </select>
+                    <!-- Month -->
+                    <select id="dobMonth" name="dobMonth" required>
+                        <!-- Options for month -->
+                        <!-- You can use the full month names or abbreviations -->
+                        <option value="1">January</option>
+                        <!-- ... (up to December) ... -->
+                    </select>
+                    <!-- Year -->
+                    <select id="dobYear" name="dobYear" required>
+                        <!-- Options for year -->
+                        <!-- You can generate these options dynamically based on the desired range -->
+                        <option value="2000">2000</option>
+                        <!-- ... (up to the current year or a specific end year) ... -->
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="gender-container">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" required> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other" required> Other
+                    </label>
+                </div>
+            </div>
+            <button type="button" onclick="submitForm()">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
