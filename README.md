@@ -13,4 +13,13 @@
 1. npm init -y
 2. npm install express mongoose
 
+# server connection
+
+Here we need to connect to the local machine with the port number 3000
+
+In the same folder run the cmd on the adressbar of the file explorer.
+
+![image](https://github.com/Vijayandiran/registration-page/assets/86286255/551a1ff7-6c16-4b7b-8221-712a2e123128)
+
+
 
